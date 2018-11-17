@@ -1,0 +1,305 @@
+@main-color: #de181b;
+ @border-color: #ccc;
+ html {
+     font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+     -ms-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+     font-size: 62.5%;
+}
+ body {
+     margin: 0;
+     font-size: 0.37333333333rem !important;
+     line-height: 1.5;
+     color: #333333;
+     background-color: white;
+     height: 100%;
+     overflow-x: hidden;
+     -webkit-overflow-scrolling: touch;
+}
+ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+     display: block;
+}
+ audio, canvas, progress, video {
+     display: inline-block;
+     vertical-align: baseline;
+}
+ audio:not([controls]) {
+     display: none;
+     height: 0;
+}
+ [hidden], template {
+     display: none;
+}
+ svg:not(:root) {
+     overflow: hidden;
+}
+ a {
+     background: transparent;
+     text-decoration: none;
+     // 去除a标签按住高亮的颜色 
+     -webkit-tap-highlight-color: transparent;
+     color: #0088cc;
+}
+ a:active {
+     outline: 0;
+}
+ a:active {
+     color: #006699;
+}
+ abbr[title] {
+     border-bottom: 0.02702702702702703rem dotted;
+}
+ b, strong {
+     font-weight: bold;
+}
+ dfn {
+     font-style: italic;
+}
+ mark {
+     background: #ff0;
+     color: #000;
+}
+ small {
+     font-size: 80%;
+}
+ sub, sup {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline;
+}
+ sup {
+     top: -0.5em;
+}
+ sub {
+     bottom: -0.25em;
+}
+ img {
+     border: 0;
+     vertical-align: middle;
+}
+ hr {
+     -moz-box-sizing: content-box;
+     box-sizing: content-box;
+     height: 0;
+}
+ pre {
+     overflow: auto;
+     white-space: pre;
+     white-space: pre-wrap;
+     word-wrap: break-word;
+}
+ code, kbd, pre, samp {
+     font-family: monospace, monospace;
+     font-size: 1em;
+}
+ button, input, optgroup, select, textarea {
+     color: inherit;
+     font: inherit;
+     margin: 0;
+}
+ button {
+     overflow: visible;
+}
+ button, select {
+     text-transform: none;
+}
+ button, html input[type="button"], input[type="reset"], input[type="submit"] {
+     -webkit-appearance: button;
+     cursor: pointer;
+}
+ button[disabled], html input[disabled] {
+     cursor: default;
+}
+ input {
+     line-height: normal;
+     outline: none;
+}
+ input[type="checkbox"], input[type="radio"] {
+     box-sizing: border-box;
+     padding: 0;
+}
+ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+     height: auto;
+}
+ input[type="search"] {
+     -webkit-appearance: textfield;
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+     -webkit-appearance: none;
+}
+ fieldset {
+     border: 1px solid #c0c0c0;
+     margin: 0 0.05405405405405406rem;
+     padding: 0.35em 0.625em 0.75em;
+}
+ legend {
+     border: 0;
+     padding: 0;
+}
+ textarea {
+     overflow: auto;
+     resize: vertical;
+}
+ optgroup {
+     font-weight: bold;
+}
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+ td, th {
+     padding: 0;
+}
+ html, button, input, select, textarea {
+     font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+ h1, h2, h3, h4, h5, h6, p, figure, form, blockquote {
+     margin: 0;
+}
+ ul, ol, li, dl, dd {
+     margin: 0;
+     padding: 0;
+}
+ ul, ol {
+     list-style: none outside none;
+}
+ h1, h2, h3 {
+     line-height: 2;
+     font-weight: normal;
+}
+
+ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+     color: #cccccc;
+}
+ * {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+}
+ .pull-left {
+     float: left;
+}
+ .pull-right {
+     float: right;
+}
+ .text-center {
+     text-align: center;
+}
+ .clearfix::after {
+     content: "";
+     display: block;
+     clear: both;
+}
+/********* 公共样式 **********************/
+ .bt {
+     border-top: 0.02702702702702703rem solid @border-color;
+}
+ .bb {
+     border-bottom: 0.02702702702702703rem solid @border-color;
+}
+ .bl {
+     border-left: 0.02702702702702703rem solid @border-color;
+}
+ .br {
+     border-right: 0.02702702702702703rem solid @border-color;
+}
+/*********header的css**********/
+ #header {
+     background-color: rgba(255,0,0, .5);
+     height: 1.2162162162162162rem;
+     display: flex;
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     z-index: 999;
+     >div {
+         &.logo {
+             >a {
+                 margin-top: 0.13513513513513514rem;
+                 display: block;
+                 width: 2.1621621621621623rem;
+                 height: 0.8108108108108109rem;
+                 padding: 0 0.2702702702702703rem;
+                 background-image: url('../images/sprites.png');
+                 background-size: 5.405405405405405rem 5.405405405405405rem;
+                 background-repeat: no-repeat;
+                 background-origin: content-box;
+                 background-clip: content-box;
+                 background-position: 0 -2.8378378378378377rem;
+            }
+        }
+         &.search {
+             flex: 1;
+             margin-top: 0.13513513513513514rem;
+             position: relative;
+             >i {
+                 position: absolute;
+                 top: 0.13513513513513514rem;
+                 left: 0.2702702702702703rem;
+                 width: 0.5405405405405406rem;
+                 height: 0.5405405405405406rem;
+                 background-image: url('../images/sprites.png');
+                 background-size: 5.405405405405405rem 5.405405405405405rem;
+                 background-repeat: no-repeat;
+                 background-origin: content-box;
+                 background-clip: content-box;
+                 background-position: -1.6216216216216217rem -2.918918918918919rem;
+            }
+             input {
+                 width: 100%;
+                 height: 0.8108108108108109rem;
+                 border-radius: 0.40540540540540543rem;
+                 border: 0;
+                 padding-left: 0.8108108108108109rem;
+            }
+        }
+         &.login {
+             width: 1.3513513513513513rem;
+             height: 0.9459459459459459rem;
+             float: right;
+             padding: 0.13513513513513514rem 0;
+             margin-top: 0.13513513513513514rem;
+             >a {
+                 display: block;
+                 width: 100%;
+                 height: 100%;
+                 text-align: center;
+                 color: white;
+            }
+        }
+    }
+}
+/*********** 底部区域 **************/
+ #footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     height: 1.3513513513513513rem;
+     width: 100%;
+     background-color: #fff;
+     z-index: 999;
+     ul {
+         display: flex;
+         li {
+             width: 25%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             a {
+                 display: block;
+            }
+             img {
+                 width: 1.7567567567567568rem;
+                 height: 1.3513513513513513rem;
+            }
+        }
+    }
+}
+ body {
+     padding-bottom: 1.3513513513513513rem;
+}
+ 
